@@ -76,9 +76,12 @@
             </div>
         </nav>
 
-        <main class="py-4">
+        <main class="py-4 main">
             @yield('content')
         </main>
+        <footer class='footer p20'>
+            <small class='copyright'>Book Reviews 2020 copyright</small>
+        </footer>
     </div>
 </body>
 </html>
