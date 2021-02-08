@@ -18,4 +18,7 @@ Auth::routes();
 
 Route::get('/', [ReviewController::class, 'index'])->name('index');
 
-Route::get('/review', [ReviewController::class, 'create'])->name('create');
+Route::group(['middleware' => 'auth'], function() {
+    Route::get('/review', [ReviewController::class, 'create'])->name('create');
+});
+
