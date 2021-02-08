@@ -17,3 +17,5 @@ use App\Http\Controllers\ReviewController;
 Auth::routes();
 
 Route::get('/', [ReviewController::class, 'index'])->name('index');
+
+Route::get('/review', [ReviewController::class, 'create'])->name('create');
