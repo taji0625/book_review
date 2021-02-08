@@ -2,6 +2,7 @@
 
 @section('content')
 <h1 class='pagetitle'>レビュー投稿ページ</h1>
+@include('error')
 <div class="row justify-content-center container">
   <div class="col-md-10">
     <form method='POST' action="{{ route('store') }}" enctype="multipart/form-data">
