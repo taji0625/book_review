@@ -20,5 +20,6 @@ Route::get('/', [ReviewController::class, 'index'])->name('index');
 
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/review', [ReviewController::class, 'create'])->name('create');
+    Route::post('review/store', [ReviewController::class, 'store'])->name('store');
 });
 
