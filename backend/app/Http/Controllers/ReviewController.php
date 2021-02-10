@@ -13,6 +13,7 @@ class ReviewController extends Controller
         return view('index', compact('reviews'));
     }
 
+
     public function create()
     {
         return view('review');
